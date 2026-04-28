@@ -124,11 +124,11 @@ The models were compared based on their classification performance.
 
 1. Open the notebook in Google Colab or Jupyter Notebook  
 2. Install required libraries:
-   - pandas  
+   - torch  
    - numpy  
-   - tensorflow / keras  
    - scikit-learn  
-   - matplotlib / seaborn  
+   - matplotlib  
+   - seaborn  
 
 ---
 
