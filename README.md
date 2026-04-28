@@ -28,7 +28,15 @@ Each data sample is labeled as:
 
 ## 🎯 Objective
 
-To design and compare deep learning models that can accurately classify tile quality using process data, optimizing their performance through hyperparameter tuning.
+The objective of this project is to develop a classifier system for the quality of ceramic tiles, from three different
+operation variables in three industrial process stages. This stages are Pressing, Drying and Baking. The data given contains
+measurements of each stage in a time frame of hours, with an additional register of the batch quality divided in two
+categories: First and Scrap. 
+
+Getting more in depth, the first step taken was to do an Exploratory Data Analysis [EDA], followed by the modeling
+of two Neural Networks; a Dense Neural Network (DNN) and a Convolutional Neural Network (CNN). These models
+would be optimized by a given set of HyperParameters, and then evaluated by performance, comparing the best metrics
+obtained by each network.
 
 ---
 
@@ -117,8 +125,21 @@ The models were compared based on their classification performance.
 - The **CNN showed better capability** in capturing complex patterns in the process data  
 - Hyperparameter tuning significantly improved both models  
 
-*(You can include exact metrics here if desired)*
+### 🔍 Model Comparison
 
+| Metric     | DNN Model 1 | DNN Model 2 |
+|------------|------------|------------|
+| Accuracy   | 0.9470     | 0.9545     |
+| Precision  | 0.9470     | 0.9545     |
+| Recall     | 1.0000     | 1.0000     |
+| F1-score   | 0.9728     | 0.9542     |
+
+### 📌 Key Observations
+
+- Both models achieved **perfect recall (1.0)**, meaning all positive samples were correctly identified.
+- The second model slightly improved **accuracy and precision**.
+- The first model achieved a higher **F1-score**, indicating a slightly better balance between precision and recall.
+  
 ---
 
 ## 📂 Repository Structure
